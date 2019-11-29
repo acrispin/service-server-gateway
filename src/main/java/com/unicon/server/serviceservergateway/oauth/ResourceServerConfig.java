@@ -27,11 +27,16 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
+//        http.authorizeRequests().antMatchers("/rest/security/**").permitAll()
+//                .antMatchers(HttpMethod.GET, "/rest/cliente/**", "/rest/items/listar", "/rest/usuarios/usuarios").permitAll()
+//                .antMatchers(HttpMethod.GET, "/rest/productos/ver/{id}",
+//                        "/rest/items/ver/{id}/cantidad/{cantidad}",
+//                        "/rest/usuarios/usuarios/{id}").hasAnyRole("ADMIN", "USER")
+//                .antMatchers("/rest/productos/**", "/rest/items/**", "/rest/usuarios/**").hasRole("ADMIN")
+//                .anyRequest().authenticated();
+
         http.authorizeRequests().antMatchers("/rest/security/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/rest/productos/listar", "/rest/items/listar", "/rest/usuarios/usuarios").permitAll()
-                .antMatchers(HttpMethod.GET, "/rest/productos/ver/{id}",
-                        "/rest/items/ver/{id}/cantidad/{cantidad}",
-                        "/rest/usuarios/usuarios/{id}").hasAnyRole("ADMIN", "USER")
+                .antMatchers("/rest/clientes/cliente/**", "/rest/items/listar", "/rest/usuarios/usuarios").hasAnyRole("ADMIN", "USER")
                 .antMatchers("/rest/productos/**", "/rest/items/**", "/rest/usuarios/**").hasRole("ADMIN")
                 .anyRequest().authenticated();
     }
