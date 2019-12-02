@@ -36,8 +36,12 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 //                .anyRequest().authenticated();
 
         http.authorizeRequests().antMatchers("/rest/security/**").permitAll()
-                .antMatchers("/rest/clientes/cliente/**", "/rest/items/listar", "/rest/usuarios/usuarios").hasAnyRole("ADMIN", "USER")
-                .antMatchers("/rest/productos/**", "/rest/items/**", "/rest/usuarios/**").hasRole("ADMIN")
+                .antMatchers(
+                        "/rest/clientes/cliente/**",
+                        "/rest/obras/obra/**",
+                        "/rest/plantas/planta/**",
+                        "/rest/sunat/empresa/**"
+                ).hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated();
     }
 
