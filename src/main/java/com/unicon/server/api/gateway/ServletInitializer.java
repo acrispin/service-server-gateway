@@ -1,4 +1,4 @@
-package com.unicon.server.serviceservergateway;
+package com.unicon.server.api.gateway;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

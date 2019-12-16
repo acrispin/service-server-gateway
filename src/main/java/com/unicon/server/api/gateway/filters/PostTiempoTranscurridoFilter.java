@@ -1,4 +1,4 @@
-package com.unicon.server.serviceservergateway.filters;
+package com.unicon.server.api.gateway.filters;
 
 import javax.servlet.http.HttpServletRequest;
 

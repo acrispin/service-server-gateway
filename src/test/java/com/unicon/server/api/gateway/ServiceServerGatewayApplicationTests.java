@@ -1,4 +1,4 @@
-package com.unicon.server.serviceservergateway;
+package com.unicon.server.api.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.unicon.server.serviceservergateway.oauth;
+package com.unicon.server.api.gateway.oauth;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
