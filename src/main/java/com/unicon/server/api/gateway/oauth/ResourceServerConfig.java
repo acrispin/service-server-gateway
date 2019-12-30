@@ -36,7 +36,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
                         "/rest/clientes/cliente/**",
                         "/rest/obras/obra/**",
                         "/rest/plantas/planta/**",
-                        "/rest/sunat/empresa/**"
+                        "/rest/sunat/empresa/**",
+                        "/rest/cotizaciones/cotizacion/**"
                 ).hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated();
     }
