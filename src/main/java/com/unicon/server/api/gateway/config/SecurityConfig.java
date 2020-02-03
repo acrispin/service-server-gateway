@@ -12,6 +12,19 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * basic auth spring security
+ * https://www.baeldung.com/spring-security-basic-authentication
+ * https://www.baeldung.com/spring-cloud-securing-services
+ * https://howtodoinjava.com/spring-boot2/security-rest-basic-auth-example/
+ * https://stackoverflow.com/questions/49258719/adding-spring-security-to-zuul-service-in-spring-boot-micro-service?rq=1
+ * https://memorynotfound.com/spring-security-in-memory-authentication-example/
+ * https://memorynotfound.com/spring-security-basic-authentication-configuration-example/
+ * https://www.baeldung.com/spring-security-session
+ * spring oauth2 token disable expire
+ * https://stackoverflow.com/questions/28343367/spring-security-oauth2-how-to-disable-access-token-expiry
+ *
+ */
 @Configuration
 @EnableWebSecurity
 @Order(1)
